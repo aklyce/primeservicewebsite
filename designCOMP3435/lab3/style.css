@@ -1,0 +1,59 @@
+#circle {
+     width: 200px;
+     height: 200px;
+     -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+     border-radius: 50px;
+     background: #ffdead;
+     padding-top: 15px;
+     float:left;
+   }
+ #rectangle {
+   margin: auto;
+   width: 800px;
+   height: 250px;
+   background: #ffdead;
+   padding-top: 15px;
+   float:right;
+ }
+
+ #nameBox {
+   margin: auto;
+   width: 800px;
+   height: 250px;
+   background: #ffdead;
+   padding-top: 15px;
+   float:right;
+ }
+ #mailingAddress {
+   margin: auto;
+   width: 800px;
+   height: 250px;
+   background: #ffdead;
+   padding-top: 15px;
+   float:right;
+ }
+
+#btn-group {
+  padding:15px;
+  font-weight: bold;
+  float: left;
+  color:black;
+  background-color: #2a5c5b;
+}
+#menu {
+  text-align: center;
+  float: right;
+  width: 400px;
+  height: 50px;
+  background: #2a5c5b;
+}
+
+label, input {
+    display: inline-block;
+}
+
+label {
+    margin-bottom: 0px;
+    text-align: right;
+}
