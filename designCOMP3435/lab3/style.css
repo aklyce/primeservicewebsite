@@ -1,13 +1,20 @@
+#body{
+  background-color: #8b8989;
+}
+
+
 #circle {
      width: 200px;
      height: 200px;
      -webkit-border-radius: 50px;
      -moz-border-radius: 50px;
-     border-radius: 50px;
-     background: #ffdead;
-     padding-top: 15px;
+     border-radius: 50%;
+     background: #2a5c5b;
+     padding-top: 75px;
      float:left;
+     text-align: center;
    }
+
  #rectangle {
    margin: auto;
    width: 800px;
@@ -18,20 +25,55 @@
  }
 
  #nameBox {
-   margin: auto;
    width: 800px;
    height: 250px;
-   background: #ffdead;
+   background: #ffffff;
    padding-top: 15px;
    float:right;
  }
- #mailingAddress {
-   margin: auto;
+
+ #address {
+   margin-top:50px;
    width: 800px;
    height: 250px;
-   background: #ffdead;
-   padding-top: 15px;
+   background: #ffffff;
    float:right;
+   padding-top: 30px;
+
+ }
+ #name {
+   float:left;
+ }
+
+ #acct {
+   float:right;
+ }
+
+ #save {
+   float: right;
+   margin-right: 450px;
+ }
+
+ #cancel {
+   float: left;
+   margin-left: 200px;
+ }
+
+ #phoneNumber{
+   margin-top:70px;
+   width: 800px;
+   height: 170px;
+   background: #ffffff;
+   float:right;
+   padding-top: 20px;
+ }
+
+ #security{
+   width: 800px;
+   height: 250px;
+   background: #ffffff;
+   float:right;
+   padding-top: 10px;
  }
 
 #btn-group {
@@ -47,6 +89,14 @@
   width: 400px;
   height: 50px;
   background: #2a5c5b;
+}
+#upload{
+  font-size: 15px;
+  margin-top: 110px;
+}
+
+#buttons {
+  margin-top: 30px;
 }
 
 label, input {

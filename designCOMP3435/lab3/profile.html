@@ -9,21 +9,47 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#"><strong><font size="7" color="red">Prime Service</font></strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="lab3HomePage.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registrationPage.html">Register Today!</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">Profile</a>
+          </li>
+        </ul>
+
+        <form class="form-inline">
+          <div class="md-form my-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
 </head>
 
 <body>
   <h1>
     <div class="container">
-      <div style="background: #ffdead" class="jumbotron jumbotron-fluid">
+      <div style="background-image: url('../hardware.jpg')" class="jumbotron jumbotron-fluid">
         <div class="container-fluid">
           <h1>
             <div class="float-right">
 
-        <div id="menu">
-          <a href="lab3HomePage.html"><font color="white" size="5">Home</font></a>
-          <a href="registrationPage.html"><font color="white" size="5">Register Today!</font></a>
-          <a href="profile.html"><font color="white" size="5">Profile</font></a>
-        </div>
+
 
 
 
@@ -33,39 +59,144 @@
     </div>
   </h1>
   <div class="container">
+
     <h2>
-      <u>Profile</u>
+      <u>Edit Profile</u>
     </h2>
     <h3>
       <div id="top">
-        <div id="circle"></div>
+        <div id="circle"> <font size="3">100 X 100</font>
+
+          <div id="upload" class="container">
+            <input type="file" name="file" id="file" class="inputfile" />
+            </div>
+
+        </div>
         <div id="nameBox">
 
-          <font size="4">Name</font>
+
+          Personal Information
+          <hr size="30">
+          <div>
+          <div id="name">
+          <font size="3"><b>Name</b></font></div>
+          <div id="acct">
+            <font size="3">Account Number</font>
+
+            <font size="3" style="padding-right:80px;"color="#3B8BC9">View </font>
+          </div>
+        </div>
           <br>
           <label>
-          <input type="text" class="form-control-sm" id="usr" placeholder="***********"><font color="#3475b5" size="3">view</font>
+          <input type="text" class="form-control-sm" id="usr" placeholder="First and Last Name">
           </label>
           <br>
-          <font size="4">Email Address</font>
+          <font size="3"><b>Email Address</b></font>
           <br>
           <label>
-          <input type="text" class="form-control-sm" id="usr" placeholder="*****@primeservice.com"> <font size="3"><i>preferred</i></font>
+          <input type="text" class="form-control-sm" id="usr" placeholder="Email">  <font size="3"><i>(Preferred)</i></font>
         </label>
         <br>
           <label>
-          <input type="text" class="form-control-sm" id="usr" placeholder="*** Alternate"><font color="#3475b5" size="3">add</font>
+          <input type="text" class="form-control-sm" id="usr" placeholder="Email">  <font size="3"><i>(Alternate)</i></font>
         </label>
         <br>
           <label>
-          <input type="text" class="form-control-sm" id="usr" placeholder="*** Alternate"><font color="#3475b5" size="3">add</font>
+          <input type="text" class="form-control-sm" id="usr" placeholder="Email">  <font size="3"><i>(Alternate)</i></font>
         </label>
+
+
+
+
+        </div>
+
+        <div id="address">
+          <font size="3"> <b>Mailing Address</b> </font>
+          <br>
+          <font size="3">Address Line 1: </font> <input type="text" class="form-control-sm" id="usr" placeholder="Street Address"><br>
+          <font size="3">Address Line 2:</font> <input type="text" class="form-control-sm" id="usr" placeholder="Apartment, Suite, Unit"><br>
+          <font size="3">City:</font><input type="text" class="form-control-sm" id="usr" placeholder="City"><br>
+          <font size="3">State/Province/Region:</font><input type="text" class="form-control-sm" id="usr" placeholder="State/Province/Region"><br>
+          <font size="3">ZIP/Postal Code</font><input type="text" class="form-control-sm" id="usr" placeholder="ZIP/Postal Code"><br>
+          <font size="3">Country:</font>
+          <div id="country" class="form-group">
+                <select class="form-control" id="sel1">
+                <option>United States</option>
+                <option>Barbados</option>
+                <option>South Africa</option>
+                <option>Zanzibar</option>
+                </select>
+                </div>
+        </div>
+        <div id="phoneNumber">
+          <font size="3"> <b>Phone Number</b> </font><br>
+          <input type="text" class="form-control-sm" id="usr" placeholder="Format: xxx-xxx-xxxx"> <font size="3"><i>(Preferred)</i></font><br>
+          <input type="text" class="form-control-sm" id="usr" placeholder="Format: xxx-xxx-xxxx"> <font size="3"><i>(Alternate)</i></font><br>
+          <input type="text" class="form-control-sm" id="usr" placeholder="Format: xxx-xxx-xxxx"> <font size="3"><i>(Alternate)</i></font>
+        </div>
+        <div id="security">
+          <font size="3"> <b>Security Info</b></font><br>
+          <font size="3">For your protection, these questions will help us verify your identity in the future.</font>
+          <br>
+          <font size="3">Question 1:</font>
+          <div class="form-group">
+                <select class="form-control" id="sel1">
+                <option>What is your mothers maiden name?</option>
+                <option>What elementary school did you attend in the fifth grade?</option>
+                <option>Most memorable vacation?</option>
+                <option>What street name did you grow up on?</option>
+                </select>
+                </div>
+                <input type="text" class="form-control-sm" id="usr" placeholder="answer">
+                <br>
+                <font size="3"> Question 2:</font>
+                <div class="form-group">
+                      <select class="form-control" id="sel1">
+                      <option>What is your paternal grandfathers name?</option>
+                      <option>What elementary school did you attend in the fifth grade?</option>
+                      <option>Most memorable vacation?</option>
+                      <option>What street name did you grow up on?</option>
+                      </select>
+                      </div>
+                      <input type="text" class="form-control-sm" id="usr" placeholder="answer">
+                      <br>
+                      <font size="3">Question 3:</font>
+                      <div class="form-group">
+                            <select class="form-control" id="sel1">
+                            <option>Most memorable vacation?</option>
+                            <option>What elementary school did you attend in the fifth grade?</option>
+                            <option>Name of your first pet?</option>
+                            <option>What street name did you grow up on?</option>
+                            </select>
+                            </div>
+                            <input type="text" class="form-control-sm" id="usr" placeholder="answer">
+                            <br>
+
+                            <div id="buttons">
+                            <div id="save"><button type="submit" style="background: #2a5c5b" class="btn btn-#2a5c5b"><font color="white">Save</font></button></div>
+
+                            <div id="cancel">
+                            <button type="button" class="btn btn-secondary">Cancel</button>
+                            </div>
+                          </div>
+                          <br>
+                          <br>
         </div>
 
 
 
+
+
+
       </div>
+
   </div>
+
+
+
+
+
+
 
 
 </body>
